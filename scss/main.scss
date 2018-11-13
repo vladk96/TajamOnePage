@@ -1,0 +1,32 @@
+/* VENDOR - third-party files
+==============================================================*/
+@import "vendor/slick";
+
+/* BASE - bassic files. Normalizing and typography files
+==============================================================*/
+
+@import "base/fonts";
+@import "base/normalize";
+
+/* HELPERS - files with mixins, variables
+==============================================================*/
+
+@import "helpers/variables";
+
+/* COMPONENTS - components which using more than one time in layout
+==============================================================*/
+@import "components/components";
+
+/* LAYOUT - the main components of layout
+==============================================================*/
+
+@import "layout/header";
+@import "layout/section-banner";
+@import "layout/section-story";
+@import "layout/section-video";
+@import "layout/section-expertise";
+@import "layout/section-team";
+@import "layout/section-works";
+@import "layout/section-quote";
+@import "layout/section-feedback";
+@import "layout/footer";

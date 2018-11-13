@@ -1,0 +1,46 @@
+/* Section banner */
+.banner {
+	position: relative;
+	height: calc(70vh + 20px);
+	overflow: hidden;
+	background: url(../images/header-back.jpg) no-repeat center top;
+	background-size: cover;
+	padding-top: 12rem;
+	&__heading { text-align: center; }
+	&__title {
+		font-family: 'playfair-display-black', serif;
+		font-size: $h1-font-size;
+		color: #fff;
+		text-transform: capitalize;
+		@media screen and (max-width: 768px) {
+			font-size: 1.8rem;
+		}
+	}
+	&__line {
+		width: 3.125rem;
+		height: 1px;
+		margin: 0 auto;
+		background-color: $accent;
+	}
+	&__text {
+		padding: 0 6.6rem;
+		line-height: 1.5;
+		font-family: Arial, "roboto-light", serif;
+		font-size: .875rem;
+		color: #fff;
+		margin-bottom: 3.125rem;
+		@media screen and (max-width: 768px) {
+			font-size: .8rem;
+			padding: 0 1.5rem;
+		}
+	}
+	&__button {
+		padding: 1rem 1rem 0.8rem;
+		margin-bottom: 12rem;
+	}
+
+	@media screen and (max-width: 480px) {
+		padding-top: 9rem;
+	}
+
+} //end banner

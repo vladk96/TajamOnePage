@@ -1,0 +1,106 @@
+
+
+.feedback {
+	padding: 4.375rem $standart-indent;
+
+	&__title {
+		font-family: 'playfair-display-bold';
+		font-size: $h2-font-size;
+		color: $title-grey;
+		text-transform: uppercase;
+	}
+	&__client-box {
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 5%;
+		width: 40%;
+	}
+	&__form {
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 5%;
+		width: 47%;
+	}
+}
+
+
+/* form */
+.form {
+	//max-width: 460px;
+	input::placeholder,
+	textarea::placeholder {
+		font-family: 'roboto-light';
+		font-size: .875rem;
+		text-transform: capitalize;
+		color: rgba(65,61,75,.5);
+	}
+	&__name,
+	&__email,
+	&__subject,
+	&__message {
+		width: 100%;
+		box-sizing: border-box;
+		display: block;
+		font-family: 'roboto-light';
+		font-size: .875rem;
+		color: rgba(65,61,75,.9);
+		border: 1px solid #e5e5e5;
+		outline: none;
+		margin-bottom: 1.3rem;
+		padding: 1.1rem 1.3rem;
+	}
+	&__message {
+		resize: none;
+		height: 200px;
+	}
+	&__submit {
+		padding: 1rem 2rem 0.8rem;
+		background: none;
+		font-family: 'hammersmithone-regular';
+		text-transform: uppercase;
+		color: $accent;
+		border: 1px solid $accent;
+		border-radius: 2px;
+		transition: all .4s ease;
+		cursor: pointer;
+		&:hover {
+			background: $accent;
+			color: #fff;
+		}
+	}
+} // end form
+
+/*client box*/
+.client-box {
+	margin-top: 2.8rem;
+	//max-width: 380px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	img{
+		flex-basis: 160px;
+		margin-bottom: 2.8rem;
+	}
+} //end client-box
+
+@media screen and (max-width: 830px) {
+	.feedback {
+
+	&__client-box {
+		margin-left: 0;
+		margin-top: 2.5rem;
+		display: block;
+		width: auto;
+	}
+	&__form {
+		display: block;
+		width: 100%;
+	}
+}
+}
+
+@media screen and (max-width: 339px) {
+	.feedback__client-box img {
+		margin: 0 auto  2.8rem;
+	}
+}

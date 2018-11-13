@@ -1,0 +1,68 @@
+
+
+.team {
+	background: url(../images/section4-back.jpg) no-repeat center top;
+	background-size: cover;
+	padding: 4.3rem 0;
+	text-align-last: center; // for button
+	&__heading {
+		> h2 { color: #fff; }
+		> p { color: #f9f9f9; }
+		> div { background-color: rgba(255,255,255,.2); } // line
+	}
+	&__text {
+		font-family: 'roboto-light';
+		font-size: $h4-font-size;
+		text-align: center;
+		margin: 3rem 0 1.8rem;
+		color: #f3f3f3;
+	}
+	&__button {
+		display: inline-block;
+		padding: 1rem 1rem 0.8rem;
+	}
+}
+
+/* box-team */
+.box-team {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 1.4rem;
+	&__item {
+		width: 13.75rem;
+		margin: 1.5rem $standart-indent;
+		overflow: hidden;
+		img {
+			display: block;
+			max-width: 100%;
+			box-shadow: 0px 0px 9px -1px rgba(0,0,0,.91);
+			transition: all .4s ease-in-out;
+			&:hover { transform: scale(1.05); }
+		}
+	}
+	&__desc {
+		padding-top: 1.2rem;
+		text-align: center;
+		border: {
+			top: none;
+			right: 1px solid rgba(225,225,225,.5);
+			bottom: 1px solid rgba(225,225,225,.5);
+			left: 1px solid rgba(225,225,225,.5);
+		}
+	}
+	&__surname {
+		font-family: 'roboto-black';
+		font-size: $h4-font-size;
+		text-transform: uppercase;
+		margin: 0 0 .81rem;
+		color: #fff;
+	}
+	&__proffesion {
+		font-family: 'roboto-light';
+		font-size: .81rem;
+		text-transform: uppercase;
+		margin-bottom: 1.68rem;
+		color: rgba(255,255,255,.7);
+	}
+} // end box-team
